@@ -58,13 +58,14 @@ def calculate_discriminant(a: int, b: int, c: int) -> int:
     """Calculate discriminant with given variables and return the result."""
     discriminant = b**2 - 4 * a * c
     return discriminant
-print(calculate_discriminant(15,3,6))
+# print(calculate_discriminant(15,3,6))
 
 def calculate_hypotenuse_length(a: int, b: int) -> float:
     """Return the length of hypotenuse when the lengths of the catheti are given."""
-    # Write your code here
+    c = a ** 2 + b ** 2
     return c
 
+print(calculate_hypotenuse_length(5,5))
 
 def calculate_cathetus_length(a: int, c: int) -> float:
     """Return the length of cathetus when the lengths of the second cathetus and hypotenuse are given."""
