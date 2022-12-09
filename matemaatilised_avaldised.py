@@ -65,9 +65,12 @@ def calculate_hypotenuse_length(a: int, b: int) -> float:
     c = a ** 2 + b ** 2
     return c
 
-print(calculate_hypotenuse_length(5,5))
+# print(calculate_hypotenuse_length(5,5))
 
 def calculate_cathetus_length(a: int, c: int) -> float:
     """Return the length of cathetus when the lengths of the second cathetus and hypotenuse are given."""
-    # Write your code here
+    b = c ** 2 - a ** 2
     return b
+
+print(calculate_cathetus_length(5, 25))
+    
